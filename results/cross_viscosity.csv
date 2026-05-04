@@ -1,0 +1,5 @@
+model,ckpt_basename,viscosity,n_samples,mean_L2,std_L2,params
+ar2d,sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_ts0.1_best.pt,1e-3,200,0.576533,0.123307,2124166
+ar2d,sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_ts0.1_best.pt,1e-4,200,0.673888,0.130365,2124166
+fno,ns_FNO_our_split_best.pt,1e-3,200,0.757318,0.130334,4749377
+fno,ns_FNO_our_split_best.pt,1e-4,200,0.730275,0.144412,4749377

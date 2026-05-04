@@ -1,0 +1,22 @@
+# SpectraNet on Shallow Water (PDEBench) at 64².
+# Cross-PDE table row 4.  Test L² = 0.0012 (vs FNO 0.0015, 1.25× lower).
+
+dataset:           sw
+width:             32
+modes:             12
+levels:            3
+ch_cap:            2
+residual_target:   true
+two_step_lambda:   0.1
+output_mode:       multiscale_mlp     # decorated head, matches the shipped checkpoint
+no_kan:            false
+skip_merge:        add
+bottleneck_attn:   none
+epochs:            500
+batch_size:        10
+lr:                1.0e-3
+weight_decay:      1.0e-5
+seed:              0
+T_in:              10
+T_out:             10
+step:              1

@@ -1,0 +1,13 @@
+dataset,arch,params,test_l2,split,protocol,note
+NS_nu1e-5,spectranet_canonical_mlp_head,2040705,0.0822,850/150/200,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,canonical SpectraNet (two-layer 1x1 MLP output head with GeLU and hidden 4w); decorated multi-res+KAN variant gives 0.0821 at 2124166 params (E7 ablation)
+NS_nu1e-5,fno_n64_m12,4749377,0.1024,850/150/200,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,canonical FNO baseline
+NS_nu1e-3,ar2d_w32_resi_2step_E6,2124166,0.0011,850/150/200,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,from FNO-author release subset 1200x20
+NS_nu1e-3,fno_n64_m12,4749377,0.0023,850/150/200,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,canonical FNO baseline
+NS_nu1e-4,ar2d_w32_resi_2step_E6,2124166,0.01521,850/150/200,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,from FNO-author release subset 1200x20
+NS_nu1e-4,fno_n64_m12,4749377,0.02307,850/150/200,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,canonical FNO baseline
+ShallowWater_2D,ar2d_w32_resi_2step_E6,2124166,0.0012,700/150/150,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,PDEBench 2D radial dam break, 64x64 stride-2
+ShallowWater_2D,fno_n64_m12,4749377,0.0015,700/150/150,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,canonical FNO baseline
+PDEBench_DR,ar2d_w32_resi_2step_E6,2124166,0.0201,700/150/150,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,PDEBench 2D diffusion-reaction
+PDEBench_DR,fno_n64_m12,4749377,0.0341,700/150/150,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,canonical FNO baseline
+TheWell_AM,ar2d_w32_resi_2step_E6,2124166,0.00170,135/48/42,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,The Well active matter -- small N, near-static field
+TheWell_AM,fno_n64_m12,4749377,0.00149,135/48/42,T_in=10/T_out=10/AdamW+OneCycleLR/500ep,canonical FNO baseline (FNO wins this row)

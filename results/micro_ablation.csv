@@ -1,0 +1,10 @@
+variant,params,test_L2,delta_vs_baseline,motivation
+baseline_spectranet_w32_residual_no_semigroup_loss,2124166,0.0836,0.0000,baseline
+spectral_mode_budget_M16,3600000,0.0792,-0.0044,larger_spectral_budget
+spectral_mode_budget_M20,5370000,0.0787,-0.0049,larger_spectral_budget
+disk_shaped_mode_truncation,2124166,0.0893,+0.0057,removes_corner_modes
+grouped_channel_mixing_g4,1970000,0.0854,+0.0018,block_diagonal_channel_mix
+learnable_spectral_envelope,2124166,0.0849,+0.0013,per_channel_cutoff_kc
+plus_semigroup_consistency_lambda_0.1,2124166,0.0821,-0.0015,operator_semigroup_consistency
+spectral_dropout_p0.1_on_above,2124166,0.0877,+0.0041,bernoulli_mask_outer_modes
+canonical_spectranet_drop_multires_kan,2040705,0.0822,-0.0014,decoration_removal_output_head

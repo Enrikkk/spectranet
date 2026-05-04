@@ -1,0 +1,32 @@
+model,sum_p_numel,complex_param_n,n_state_dict_keys,ckpt_path
+FNO,4749377,4718592,24,./checkpoints/baselines/NSL/ns_FNO_our_split_best.pt
+FNO_seed1,4749377,4718592,24,./checkpoints/baselines/NSL/ns_FNO_our_split_s1_best.pt
+F_FNO,155381,0,24,./checkpoints/baselines/NSL/ns_F_FNO_our_split_best.pt
+U_FNO,39382083,4718592,152,./checkpoints/baselines/NSL/ns_U_FNO_our_split_best.pt
+U_NO,50798909,33423360,204,./checkpoints/baselines/NSL/ns_U_NO_our_split_best.pt
+LSM,19197121,0,94,./checkpoints/baselines/NSL/ns_LSM_our_split_best.pt
+MWT,76074,5184,168,./checkpoints/baselines/NSL/ns_MWT_our_split_best.pt
+Galerkin_Transformer,4391681,0,153,./checkpoints/baselines/NSL/ns_Galerkin_Transformer_our_split_best.pt
+U_Net,276964353,0,64,./checkpoints/baselines/NSL/ns_U_Net_our_split_best.pt
+Transformer,4381441,0,113,./checkpoints/baselines/NSL/ns_Transformer_our_split_best.pt
+Transolver,11200577,0,169,./FNO/Baselines/Transolver/PDE-Solving-StandardBenchmark/checkpoints/ns_transolver_our_split_best.pt
+ONO,123780,0,83,./checkpoints/baselines/Orthogonal-Neural-operator/ns_ono_our_split_best.pt
+GNOT,1225738,0,104,./checkpoints/baselines/gnot/ns_gnot_our_split_best.pt
+FactFormer,3466049,0,132,./checkpoints/baselines/FactFormer/ns_factformer_our_split_best.pt
+OFormer,549577,0,77,./FNO/Baselines/OFormer/uniform_grids/checkpoints/ns_oformer_our_split_best.pt
+KNO2d,263882,262144,7,./checkpoints/baselines/KoopmanLab/ns_kno_our_split_best.pt
+AR-2D w=20,830806,704000,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w20_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_best.pt
+AR-2D w=32 plain,2124166,1802240,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_best.pt
+AR-2D w=48 plain,4776006,4055040,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w48_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_best.pt
+AR-2D w=64 plain,8487686,7208960,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w64_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_best.pt
+AR-2D w32 resi (J14),2124166,1802240,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_best.pt
+AR-2D w32 resi seed1,2124166,1802240,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_s1_resi_best.pt
+AR-2D w32 resi+ts (E6),2124166,1802240,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_ts0.1_best.pt
+AR-2D resi M16,3598726,3276800,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m16_S64_lr1e-03_adamw_oclr_resi_best.pt
+AR-2D resi M20,5368198,5046272,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m20_S64_lr1e-03_adamw_oclr_resi_best.pt
+AR-2D resi disk (E2),2124545,1802619,90,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_disk_best.pt
+AR-2D resi mg4 (E4),1970566,1802240,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_mg4_best.pt
+AR-2D resi env (E5),2124742,1802240,90,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_env_best.pt
+CNO,2025787,0,302,./checkpoints/baselines/CNO/ns_CNO_our_split_best.pt
+AR-2D resi+ts+sd (E8),2124166,1802240,83,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_omm_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_ts0.1_sd0.10_best.pt
+AR-2D resi+ts linear-head,2040705,1802240,57,./checkpoints/sunet_ar2d_ns5_L3_smadd_bno_os_eno_dno_w32_fmm_rwl_pjl_lfl_opk_spl_kte_g5_N850_ep500_m12_S64_lr1e-03_adamw_oclr_resi_nokan_ts0.1_best.pt

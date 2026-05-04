@@ -1,0 +1,25 @@
+# SpectraNet on Active Matter (The Well) at 64².
+# Cross-PDE table row 6.  Test L² = 0.00170; FNO wins this regime by ≈13%.
+# This is the regime predicted by Theorem 1 to suppress the stability mechanism's
+# contribution — the network's spectral truncation cannot fully capture the
+# fine-scale Active-Matter dynamics.
+
+dataset:           am
+width:             32
+modes:             12
+levels:            3
+ch_cap:            2
+residual_target:   true
+two_step_lambda:   0.1
+output_mode:       multiscale_mlp
+no_kan:            false
+skip_merge:        add
+bottleneck_attn:   none
+epochs:            500
+batch_size:        10
+lr:                1.0e-3
+weight_decay:      1.0e-5
+seed:              0
+T_in:              10
+T_out:             10
+step:              1

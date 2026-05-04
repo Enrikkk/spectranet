@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spectranet"
+version = "0.1.0"
+description = "SpectraNet: a parameter-efficient autoregressive spectral U-Net for PDE surrogates."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Anonymous Authors" }]
+keywords = ["neural-operator", "PDE", "Fourier", "spectral", "Navier-Stokes"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "torch>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "h5py>=3.8",
+    "matplotlib>=3.7",
+    "tqdm>=4.65",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "pytest-xdist>=3.3"]
+
+[tool.setuptools.packages.find]
+include = ["spectranet*"]
+exclude = ["tests*", "scripts*", "baselines*", "timing*", "configs*", "results*", "figures*", "checkpoints*", "data*", "docs*", "paper*", "slurm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"

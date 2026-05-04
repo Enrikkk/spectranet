@@ -1,0 +1,12 @@
+# Pinned versions matching the environment used to produce the paper numbers.
+# Loose lower bounds; any newer release of these libraries should also work.
+torch>=2.0
+numpy>=1.24
+scipy>=1.10
+h5py>=3.8
+matplotlib>=3.7
+tqdm>=4.65
+PyYAML>=6.0
+
+# Development / testing
+pytest>=7.4

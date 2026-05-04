@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use SpectraNet in your research, please cite the accompanying paper."
+title: "SpectraNet: Bridging Spectral Operator Learning and U-Net Hierarchies for Stable Autoregressive PDE Surrogates"
+authors:
+  - name: "Anonymous Authors"
+abstract: "SpectraNet is a parameter-efficient neural operator for autoregressive PDE surrogates. It combines a Fourier-truncated U-Net hierarchy with a residual-target spectral block and a semigroup-consistency training loss. On Navier–Stokes ν=1e-5 it reaches 0.0822 test L² with 2.04 M parameters — 2.33× fewer than canonical FNO at ~20% lower error — and the architectural advantage transports to five additional datasets and improves at higher resolution."
+version: 0.1.0
+date-released: "2026-05-04"
+license: MIT
+keywords:
+  - neural operator
+  - PDE surrogate
+  - spectral methods
+  - Navier-Stokes
+  - autoregressive rollout

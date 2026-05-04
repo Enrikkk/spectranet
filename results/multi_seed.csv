@@ -1,0 +1,5 @@
+model,params,seed_0,seed_1,mean,std
+spectranet_canonical_mlp_head_2.04M,2040705,0.0822,,,
+spectranet_decorated_multires_kan_2.12M,2124166,0.0821,0.0822,0.0821,0.0001
+spectranet_w32_residual_no_semigroup_loss,2124166,0.0836,0.0850,0.0843,0.0010
+fno_nsl_baseline,4749377,0.1024,0.1069,0.1047,0.0032

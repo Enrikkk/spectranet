@@ -1,0 +1,32 @@
+model,test_L2_best,params,provenance,on_pareto_frontier
+"SpectraNet (ours, headline)",0.0822,2040705,this work (J23),Y
+"SpectraNet (ours), w=32 + residual, seed 0",0.0836,2124166,this work (J14),Y
+"SpectraNet (ours), w=32 + residual, seed 1",0.0850,2124166,this work (J3222),
+"SpectraNet (ours), M=20",0.0787,5368198,this work (J19),Y
+"SpectraNet (ours), M=16",0.0792,3598726,this work (J18),Y
+"SpectraNet (ours), w=48 plain",0.0836,4776006,this work (3190),
+"SpectraNet (ours), w=64 plain",0.0869,8487686,this work (3199),
+"SpectraNet (ours), w=20 plain",0.0941,830806,this work (3187),Y
+"SpectraNet (ours), w=32 + grouped channel-mixing MLP",0.0854,1970566,this work (J21),
+"SpectraNet (ours), w=32 + spectral envelope",0.0849,2124742,this work (J24),
+"SpectraNet (ours), w=32 + disk truncation",0.0893,2124545,this work (J20),
+"SpectraNet (ours), 3D-spectral variant",0.1006,8574657,this work (3188),
+"Transformer (NSL, full softmax)",0.0284,4381441,wu2024nsl,
+Galerkin Transformer,0.1097,4391681,cao2021galerkin,
+FNO seed 0,0.1024,4749377,li2020fno,
+FNO seed 1,0.1069,4749377,li2020fno (seed 1),
+U-FNO,0.1218,39382083,wen2022ufno,
+U-Net (NSL),0.1387,276964353,wu2024nsl,
+FactFormer,0.1639,3466049,li2023factformer,
+U-NO,0.1697,50798909,rahman2023uno,
+"SpectraNet (ours), single-shot variant",0.1942,14490352,this work (3123),
+MWT,0.1944,76074,gupta2021mwt,
+LSM,0.1951,19197121,wu2023lsm,
+OFormer,0.2162,549577,li2023oformer,
+Transolver,0.2247,11200577,wu2024transolver,
+F-FNO,0.2331,155381,tran2021ffno,
+GNOT,0.2362,1225738,hao2023gnot,
+KNO2d,0.3092,263882,xiong2024kno,
+CNO,0.3259,2025787,raonic2023cno,
+ONO,0.3443,123780,xiao2024ono,
+Persistence (trivial floor),0.7481,0,this work,

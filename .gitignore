@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+*.egg
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+
+# Local artifacts (not part of the release; reviewers generate these themselves)
+logs/
+plots/
+runs/
+wandb/
+
+# Local data overrides (the canonical data/ directory IS shipped; user-specific extras are not)
+data/local/
+
+# Large in-house dataset — too big for GitHub (>100 MB hard limit per file).
+# The 128² .mat is hosted on Zenodo; see docs/ARTIFACTS.md for the link.
+data/*.mat

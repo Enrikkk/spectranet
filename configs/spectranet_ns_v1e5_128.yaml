@@ -1,0 +1,25 @@
+# SpectraNet on Navier–Stokes ν = 10⁻⁵ at native 128².
+# In-house dataset (released alongside the code in data/).  This row reaches
+# test L² = 0.0724 — IMPROVING 12% over the 64² result (0.0822).  The same
+# experiment on FNO regresses to 0.3080 (3× worse than its own 64² number).
+# The architectural gap widens from 1.25× at 64² to 4.25× at 128².
+
+dataset:           ns_v1e5_128
+width:             32
+modes:             12
+levels:            3
+ch_cap:            2
+residual_target:   true
+two_step_lambda:   0.1
+output_mode:       multiscale_mlp     # decorated head, matches the shipped checkpoint
+no_kan:            false
+skip_merge:        add
+bottleneck_attn:   none
+epochs:            500
+batch_size:        10
+lr:                1.0e-3
+weight_decay:      1.0e-5
+seed:              0
+T_in:              10
+T_out:             10
+step:              1

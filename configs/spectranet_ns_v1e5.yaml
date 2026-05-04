@@ -1,0 +1,45 @@
+# Canonical SpectraNet on Navier–Stokes ν = 10⁻⁵ at 64².
+#
+# This is the headline configuration of the paper:
+#   - 2,040,705 parameters (PyTorch convention)
+#   - test L² = 0.0822 on the 200-trajectory test split
+#   - 2.33× fewer parameters than canonical FNO at ≈20% lower error
+#
+# Training time: ~100 minutes on a single H100.
+
+dataset:           ns_v1e5
+width:             32
+modes:             12
+levels:            3
+ch_cap:            2
+
+# Two named SpectraNet modules
+residual_target:   true              # Residual-Target Spectral Block (E3)
+two_step_lambda:   0.1               # Semigroup-Consistency Loss      (E6)
+
+# Output projection: two-layer 1×1 MLP (hidden 4w=128, GeLU)
+output_mode:       single
+no_kan:            true              # forces Linear output regardless of --output
+
+# Default architectural choices
+skip_merge:        add
+bottleneck_attn:   none
+encoder_skip_attn: none
+decoder_out_attn:  none
+mode_truncation:   box               # E2 default
+mlp_groups:        1                 # E4 default
+spectral_envelope: false             # E5 default
+spectral_dropout:  0.0               # E8 default
+dropout:           0.0
+
+# Optimizer + schedule (gold-standard protocol)
+epochs:            500
+batch_size:        10
+lr:                1.0e-3
+weight_decay:      1.0e-5
+seed:              0
+
+# Window
+T_in:              10
+T_out:             10
+step:              1
