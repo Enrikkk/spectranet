@@ -34,7 +34,7 @@ python scripts/eval_long_horizon.py \
 | `results/` | Canonical CSVs that back every table and figure in the paper (leaderboard, cross-PDE, multi-seed, Lipschitz, long-horizon, resolution transfer, …). |
 | `figures/` | The exact PDF figures embedded in the paper, regenerable from `results/` via `scripts/figures/`. |
 | `checkpoints/` | Pretrained weights for the canonical SpectraNet on every dataset, the decorated-head ablation variant, the bottleneck-widened sanity check, the canonical FNO, and the canonical Transformer. |
-| `data/` | The in-house native-128² Navier–Stokes dataset (the only dataset we generated ourselves). All other datasets are public — see `docs/DATA.md` for download instructions. |
+| `data/` | Holds only a README pointing to data sources.  The in-house native-128² dataset is hosted on Zenodo (see `docs/ARTIFACTS.md`); other datasets are public — see `docs/DATA.md` for download instructions. |
 | `paper/paper.pdf` | The anonymized submission PDF. |
 | `tests/` | Smoke tests reviewers can run without an H100 or a full dataset (param-count, imports, eval). |
 | `slurm/` | Optional H100 sbatch templates for cluster reproduction. |
@@ -49,7 +49,7 @@ Read [`docs/REPRODUCING.md`](docs/REPRODUCING.md). It maps every table and figur
 - **Navier–Stokes ν = 10⁻⁵, 10⁻⁴, 10⁻³** at 64²: public, from the FNO release (Li et al., 2020). See `docs/DATA.md` for the download URL.
 - **Shallow Water, Diffusion–Reaction**: public, from PDEBench. See `docs/DATA.md`.
 - **Active Matter**: public, from The Well. See `docs/DATA.md`.
-- **Navier–Stokes ν = 10⁻⁵ at 128²**: *in-house*. The `.mat` file is shipped in `data/ns_v1e5_128_N1200_T20.mat`; the generator is `scripts/generate_ns_128.py`. Provenance is documented in `docs/DATA.md`.
+- **Navier–Stokes ν = 10⁻⁵ at 128²**: *in-house*. Hosted separately on Zenodo (the file is too large for GitHub) — see [`docs/ARTIFACTS.md`](docs/ARTIFACTS.md) for the DOI.  Equivalently, the dataset is regenerable bit-identically by running `scripts/generate_ns_128.py` (~6 hours on a single H100); provenance and protocol are documented in [`docs/DATA.md`](docs/DATA.md).
 
 ## Baselines
 
