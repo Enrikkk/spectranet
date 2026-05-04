@@ -49,8 +49,15 @@ The eval scripts (`scripts/eval_*.py`) wrap this with `_eval_common.load_spectra
 
 The 1.5 GB `ns_v1e5_128_N1200_T20.mat` exceeds GitHub's 100 MB per-file limit, so it is hosted separately on **Zenodo** under anonymous metadata.
 
-- **DOI**: *to be assigned and inserted before the camera-ready deadline.  In the interim, reviewers who need the file urgently can regenerate it bit-identically in roughly 6 hours on a single H100 by running* `python scripts/generate_ns_128.py --out ./data/ns_v1e5_128_N1200_T20.mat` *(see [`DATA.md`](DATA.md) for the protocol).*  The generator is deterministic given `--seed 0` (the default), so the regenerated file is bit-equivalent to the Zenodo deposit.
-- SHA-256 of the canonical Zenodo upload (a tar.gz wrapping the .mat plus a README): `359665e85fb5e85869b3f8e7cf3f79e46f842346549ce2e39eabc33f0a81fc4d`.
+- **DOI**: [`10.5281/zenodo.20030455`](https://doi.org/10.5281/zenodo.20030455)
+- **Direct download URL** (resolves through the DOI): https://doi.org/10.5281/zenodo.20030455
+- **SHA-256** of the deposited `ns_v1e5_128_N1200_T20.mat`:
+  `c0323e8dce484f6bee24a12273866a8fb9d34b78eb857ab315013518b72139a7`
+- **Reproduction fallback**: the dataset is regenerable bit-identically in roughly 6 hours on a single H100 by running
+  ```bash
+  python scripts/generate_ns_128.py --out ./data/ns_v1e5_128_N1200_T20.mat
+  ```
+  The generator is deterministic given `--seed 0` (the default), so the regenerated file is bit-equivalent to the Zenodo deposit (sha256 will match).  See [`DATA.md`](DATA.md) for the protocol.
 
 Code + the 11 pretrained checkpoints (191 MB total) are inside this anonymous repository and require no separate hosting.
 

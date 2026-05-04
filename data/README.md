@@ -4,13 +4,20 @@ This directory **does not contain any dataset files in this anonymous repository
 
 ## In-house native-128² Navier–Stokes dataset
 
-The only dataset *we* generated ourselves is hosted on **Zenodo** under anonymous metadata.  See [`../docs/ARTIFACTS.md`](../docs/ARTIFACTS.md) for the DOI link.
+The only dataset *we* generated ourselves is hosted on **Zenodo** under anonymous metadata.
 
-If you prefer to regenerate the file from scratch (it is bit-identical given the same seed), run:
+- **DOI**: [`10.5281/zenodo.20030455`](https://doi.org/10.5281/zenodo.20030455)
+- **SHA-256**: `c0323e8dce484f6bee24a12273866a8fb9d34b78eb857ab315013518b72139a7`
+- See [`../docs/ARTIFACTS.md`](../docs/ARTIFACTS.md) for the full record (provenance, verification, and regeneration fallback).
+
+After downloading, place the file at `data/ns_v1e5_128_N1200_T20.mat` and the trainers / eval scripts will pick it up automatically.
+
+If you prefer to regenerate the file from scratch (it is bit-identical given the same seed), run from the release root:
 
 ```bash
-python ../scripts/generate_ns_128.py --out ./ns_v1e5_128_N1200_T20.mat
+python scripts/generate_ns_128.py --out ./data/ns_v1e5_128_N1200_T20.mat
 # ~6 hours on a single H100; produces a 1.5 GB scipy v5 .mat file
+# sha256 matches the Zenodo deposit
 ```
 
 The protocol (Li et al. 2020 vorticity-form pseudo-spectral solver — 2/3 dealiasing, Crank–Nicolson on the linear part, explicit Euler on the nonlinear advection, Matérn-spectrum Gaussian random-field initial conditions) is documented in [`../docs/DATA.md`](../docs/DATA.md).

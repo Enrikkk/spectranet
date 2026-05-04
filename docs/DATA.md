@@ -8,7 +8,7 @@
 | `sw` | [PDEBench](https://github.com/pdebench/PDEBench) | `data/ShallowWater.mat` | Shallow Water benchmark.  Cite Takamoto et al. (NeurIPS 2022). |
 | `dr` | [PDEBench](https://github.com/pdebench/PDEBench) | `data/DiffusionReaction.mat` | Diffusion-Reaction benchmark.  Cite Takamoto et al. (NeurIPS 2022). |
 | `am` | [The Well](https://github.com/PolymathicAI/the_well) | `data/ActiveMatter.mat` | Active Matter from The Well.  Cite Ohana et al. (NeurIPS 2024). |
-| `ns_v1e5_128` | **In-house** (this work) | `data/ns_v1e5_128_N1200_T20.mat` (download to here) | Native 128² Navier–Stokes ν=10⁻⁵.  Hosted on **Zenodo** under anonymous metadata — see [`ARTIFACTS.md`](ARTIFACTS.md) for the DOI link.  The dataset is also regenerable bit-identically with `scripts/generate_ns_128.py` (~6 hours on a single H100). |
+| `ns_v1e5_128` | **In-house** (this work) | `data/ns_v1e5_128_N1200_T20.mat` (download to here) | Native 128² Navier–Stokes ν=10⁻⁵.  Hosted on **Zenodo** under anonymous metadata at DOI [`10.5281/zenodo.20030455`](https://doi.org/10.5281/zenodo.20030455) — see [`ARTIFACTS.md`](ARTIFACTS.md) for SHA-256 and verification details.  The dataset is also regenerable bit-identically with `scripts/generate_ns_128.py` (~6 hours on a single H100). |
 
 ## Download recipe
 
