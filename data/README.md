@@ -1,10 +1,10 @@
 # `data/` directory
 
-This directory **does not contain any dataset files in this anonymous repository**.  Datasets are too large for GitHub (the in-house 128² file alone is 1.5 GB, well past GitHub's 100 MB per-file limit), so the actual data lives elsewhere.
+This directory **does not contain any dataset files**. Datasets are too large for GitHub (the in-house 128² file alone is 1.5 GB, well past GitHub's 100 MB per-file limit), so the actual data lives elsewhere.
 
 ## In-house native-128² Navier–Stokes dataset
 
-The only dataset *we* generated ourselves is hosted on **Zenodo** under anonymous metadata.
+The only dataset *we* generated ourselves is hosted on **Zenodo**.
 
 - **DOI**: [`10.5281/zenodo.20030455`](https://doi.org/10.5281/zenodo.20030455)
 - **SHA-256**: `c0323e8dce484f6bee24a12273866a8fb9d34b78eb857ab315013518b72139a7`

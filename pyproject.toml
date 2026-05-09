@@ -9,7 +9,14 @@ description = "SpectraNet: a parameter-efficient autoregressive spectral U-Net f
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [{ name = "Anonymous Authors" }]
+authors = [
+    { name = "Enrique Hernández Noguera", email = "ehernan8@uno.edu" },
+    { name = "Md Meftahul Ferdaus",       email = "mferdaus@uno.edu" },
+    { name = "Elias Ioup" },
+    { name = "Mahdi Abdelguerfi" },
+    { name = "Julian Simeonov" },
+]
+urls = { Homepage = "https://github.com/Enrikkk/spectranet", Repository = "https://github.com/Enrikkk/spectranet" }
 keywords = ["neural-operator", "PDE", "Fourier", "spectral", "Navier-Stokes"]
 classifiers = [
     "Programming Language :: Python :: 3",

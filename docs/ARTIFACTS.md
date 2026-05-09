@@ -47,7 +47,7 @@ The eval scripts (`scripts/eval_*.py`) wrap this with `_eval_common.load_spectra
 
 ## Hosting
 
-The 1.5 GB `ns_v1e5_128_N1200_T20.mat` exceeds GitHub's 100 MB per-file limit, so it is hosted separately on **Zenodo** under anonymous metadata.
+The 1.5 GB `ns_v1e5_128_N1200_T20.mat` exceeds GitHub's 100 MB per-file limit, so it is hosted separately on **Zenodo**.
 
 - **DOI**: [`10.5281/zenodo.20030455`](https://doi.org/10.5281/zenodo.20030455)
 - **Direct download URL** (resolves through the DOI): https://doi.org/10.5281/zenodo.20030455
@@ -59,7 +59,7 @@ The 1.5 GB `ns_v1e5_128_N1200_T20.mat` exceeds GitHub's 100 MB per-file limit, s
   ```
   The generator is deterministic given `--seed 0` (the default), so the regenerated file is bit-equivalent to the Zenodo deposit (sha256 will match).  See [`DATA.md`](DATA.md) for the protocol.
 
-Code + the 11 pretrained checkpoints (191 MB total) are inside this anonymous repository and require no separate hosting.
+Code + the 11 pretrained checkpoints (191 MB total) are inside this repository and require no separate hosting.
 
 ## Verification
 
