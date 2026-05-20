@@ -61,7 +61,7 @@ def load_spectranet(
     config_path : str | None
         Path to the matching ``*_config.json``.  Inferred from ``ckpt_path``
         when omitted.  If neither exists, a minimal fallback config is used
-        (the canonical SpectraNet at width=32, modes=12, levels=3, single
+        (the SpectraNet at width=32, modes=12, levels=3, single
         head, no KAN, residual_target+two_step_lambda 0.1).
     S, T_in : int
         Native grid size and input-window length.  Override S to load the

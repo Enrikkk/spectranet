@@ -8,7 +8,7 @@ window and reports per-step statistics:
   * for ``T > T_out``                  : energy, max vorticity, blowup flag
                                           (any ``|u| > 100`` or NaN).
 
-Headline finding (paper Figure 3a): canonical FNO has ``blowup_frac = 1.00``
+Headline finding (paper Figure 3a): FNO has ``blowup_frac = 1.00``
 between ``T = 20`` and ``T = 50`` (every test trajectory diverges); SpectraNet
 stays at ``0.00`` for all 100 steps.
 """

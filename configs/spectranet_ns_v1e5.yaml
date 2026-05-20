@@ -3,7 +3,7 @@
 # This is the headline configuration of the paper:
 #   - 2,040,705 parameters (PyTorch convention)
 #   - test L² = 0.0822 on the 200-trajectory test split
-#   - 2.33× fewer parameters than canonical FNO at ≈20% lower error
+#   - 2.33× fewer parameters than FNO at ≈20% lower error
 #
 # Training time: ~100 minutes on a single H100.
 
@@ -32,7 +32,7 @@ spectral_envelope: false             # E5 default
 spectral_dropout:  0.0               # E8 default
 dropout:           0.0
 
-# Optimizer + schedule (gold-standard protocol)
+# Optimizer + schedule (training protocol)
 epochs:            500
 batch_size:        10
 lr:                1.0e-3

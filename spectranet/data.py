@@ -87,7 +87,7 @@ class MatReader(object):
         return x
 
 
-# ─── Normalizers (kept for completeness; canonical SpectraNet does not normalize) ─
+# ─── Normalizers (kept for completeness; SpectraNet does not normalize) ─
 
 class UnitGaussianNormalizer(object):
     def __init__(self, x, eps: float = 1e-5, time_last: bool = True):

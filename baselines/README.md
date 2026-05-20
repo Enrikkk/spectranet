@@ -1,6 +1,6 @@
 # Baseline operator adapters
 
-These first-party adapter scripts wire 17 published neural operator architectures into the gold-standard SpectraNet protocol (850/150/200 split, T_in=10, T_out=10, 500 epochs, AdamW + OneCycleLR, relative L² loss).  We do not vendor the upstream code; instead, run `install_baselines.sh` to clone each repository at a pinned commit, then invoke the adapter you need.
+These adapter scripts wire 17 published neural operator architectures into the shared SpectraNet protocol (850/150/200 split, T_in=10, T_out=10, 500 epochs, AdamW + OneCycleLR, relative L² loss).  We do not vendor the upstream code; instead, run `install_baselines.sh` to clone each repository at a pinned commit, then invoke the adapter you need.
 
 ## Install
 
@@ -29,7 +29,7 @@ This populates `./third_party/{NSL,Transolver,FactFormer,gnot,OFormer,KoopmanLab
 All adapters take a `--data_path` (default `./data/NavierStokes_V1e-5_N1200_T20.mat`) and a `--baseline_root` (default `./third_party/<name>/`).  Output artifacts (`*_losses.csv`, `*_test_results.csv`, `*_config.json`, `checkpoints/*_best.pt`) land in the working directory under `plots/` and `checkpoints/`.
 
 ```bash
-# canonical FNO run (yields test L² ≈ 0.1024, 4.75 M params)
+# FNO run (yields test L² ≈ 0.1024, 4.75 M params)
 python baselines/ns_nsl.py --model_name FNO \
        --data_path ./data/NavierStokes_V1e-5_N1200_T20.mat \
        --baseline_root ./third_party/NSL

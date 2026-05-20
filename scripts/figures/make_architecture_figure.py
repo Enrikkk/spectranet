@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """DEPRECATED — do not run.
 
-The canonical SpectraNet architecture figure is now hand-drawn in drawio
+The SpectraNet architecture figure is now hand-drawn in drawio
 (source: paper/SpectraNet-Architecture.drawio, export:
 paper/SpectraNet-Architecture-crop.pdf, deployed: figures/architecture.pdf).
 This matplotlib generator is preserved for historical reference only; running

@@ -1,7 +1,7 @@
 """KAN sub-layers and attention modules used by the SpectraNet ablation set.
 
-The canonical SpectraNet (paper headline) does NOT use any of these — the
-ablation table reports them as a tested-and-rejected output-head decoration.
+The SpectraNet (paper headline) does NOT use any of these — the
+ablation table reports them as a  output-head decoration.
 They are kept here so the ablation reproduces verbatim, and so the decorated
 checkpoint at ``checkpoints/spectranet_ns_v1e5_decorated_best.pt`` loads.
 """
@@ -209,7 +209,7 @@ class KANSpectralConv2d(nn.Module):
 
     Replaces the per-mode complex linear in :class:`SpectralConv2d` with a KAN
     layer over the (real, imag) channel features.  Used only in the KAN
-    spectral-block ablation; the canonical SpectraNet uses
+    spectral-block ablation; the SpectraNet uses
     :class:`spectranet.model.SpectralConv2d` instead.
     """
 

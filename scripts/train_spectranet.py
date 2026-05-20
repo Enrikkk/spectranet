@@ -1,6 +1,6 @@
 """SpectraNet training script.
 
-One unified trainer for the canonical SpectraNet across all 7 dataset
+One unified trainer for the SpectraNet across all 7 dataset
 families.  Replaces the legacy collection of near-duplicate trainer scripts
 (``ns_sunet_ar2d.py`` and its 6 cross-PDE variants ``_am``, ``_dr``, ``_sw``,
 ``_v1e3``, ``_v1e4``, ``_128``).

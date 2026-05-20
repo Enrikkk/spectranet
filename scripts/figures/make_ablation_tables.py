@@ -64,7 +64,7 @@ with (ROOT / "tables" / "micro_ablation.tex").open("w") as f:
             "with a more decorated output head (multi-resolution $+$ KAN, "
             "$2.12\\,\\text{M}$ params); the Semigroup-Consistency Loss row produces the "
             "largest single-knob improvement among them. The bottom row "
-            "(\\textbf{canonical SpectraNet}) removes the decorative output head, "
+            "(\\textbf{SpectraNet}) removes the decorative output head, "
             "replacing the multi-resolution and KAN substructure with a two-layer "
             "$1{\\times}1$ MLP head on top of the same Semigroup-Consistency "
             "Loss trained pipeline: $80\\,\\text{K}$ fewer parameters at a $0.0001$ "

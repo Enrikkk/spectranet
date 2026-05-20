@@ -2,7 +2,7 @@
 """Build canonical leaderboard CSV + LaTeX partial.
 
 Combines results/leaderboard_params.csv (params from state_dict.numel())
-with hardcoded test_l2 numbers from RESEARCH_STATE.md Session 9–11. Output:
+with hardcoded test_l2 numbers from the paper. Output:
   results/leaderboard.csv          — canonical leaderboard (model, L2, params, ...)
   results/leaderboard.tex          — LaTeX booktabs table
   results/pareto_data.csv          — (params, L2, model) for Pareto plot

@@ -22,7 +22,7 @@ from paths_cpu import RESULTS_DIR, PLOTS_DIR  # noqa: E402
 os.makedirs(PLOTS_DIR, exist_ok=True)
 
 
-# Hard-coded accuracy table from RESEARCH_STATE.md (same as GPU aggregator).
+# Hard-coded accuracy table from the paper.
 ACC = {
     "FNO":                  (0.1024, "FNO-family"),
     "F_FNO":                (0.2331, "FNO-family"),

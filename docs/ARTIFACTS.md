@@ -11,7 +11,7 @@
 | `checkpoints/spectranet_dr_best.pt` | 16 M | decorated | Diffusion-Reaction | 0.0201 | Cross-PDE row 5 |
 | `checkpoints/spectranet_am_best.pt` | 16 M | decorated | Active Matter | 0.00170 | Cross-PDE row 6 |
 | `checkpoints/spectranet_ns_v1e5_128_best.pt` | 16 M | decorated | NS ν=10⁻⁵, 128² | 0.0724 | Native-128² (paper §7.4) |
-| `checkpoints/fno_canonical_best.pt` | 37 M | canonical FNO (NSL) | NS ν=10⁻⁵, 64² | 0.1024 | Baseline anchor |
+| `checkpoints/fno_canonical_best.pt` | 37 M | FNO (NSL) | NS ν=10⁻⁵, 64² | 0.1024 | Baseline anchor |
 | `checkpoints/transformer_canonical_best.pt` | 17 M | NSL Transformer (full softmax) | NS ν=10⁻⁵, 64² | 0.0284 | Long-horizon comparison |
 
 Total checkpoint bundle: ~189 MB.

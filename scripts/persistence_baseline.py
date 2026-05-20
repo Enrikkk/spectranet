@@ -3,7 +3,7 @@
 
 This is the floor that every learned operator must beat to claim non-trivial
 generalization.  ``LpLoss`` of persistence on NS ν = 10⁻⁵ at 64² is roughly
-``0.7481`` — about 7× worse than canonical SpectraNet.
+``0.7481`` — about 7× worse than SpectraNet.
 """
 
 from __future__ import annotations

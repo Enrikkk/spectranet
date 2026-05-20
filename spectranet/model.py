@@ -165,7 +165,7 @@ class SpectralConv2d(nn.Module):
 
 
 class MLP2d(nn.Module):
-    """Two-layer 1×1 channel-mixing MLP with GeLU (the canonical SpectraNet
+    """Two-layer 1×1 channel-mixing MLP with GeLU (the SpectraNet
     output head when ``output_mode='single'``).
 
     With ``mlp_groups > 1`` the convolutions become grouped (the layer

@@ -55,7 +55,7 @@ class LpLoss(object):
 
 class HsLoss(object):
     """Relative H^s (Sobolev) loss — penalises mismatched derivatives in addition
-    to the L² mismatch.  Not used by the canonical SpectraNet; preserved here
+    to the L² mismatch.  Not used by the SpectraNet; preserved here
     so that ablation runs that rely on it remain reproducible."""
 
     def __init__(

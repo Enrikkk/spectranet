@@ -10,7 +10,7 @@ Inputs: results/long_horizon.csv
 Output: figures/long_horizon.pdf
 
 CSV note: there are two unlabelled `ar2d` row-blocks. By order of submission in
-run_eval_long_horizon.sh, the first block is canonical SpectraNet (headline) and
+run_eval_long_horizon.sh, the first block is SpectraNet (headline) and
 the second is the SpectraNet w=48 plain ablation. We pick the first block for
 the headline plot and include the second as a faded line for completeness.
 """

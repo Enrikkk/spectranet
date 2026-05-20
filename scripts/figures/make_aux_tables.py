@@ -94,7 +94,7 @@ with RES_CSV.open() as f:
 # bilinear native + bilinear transfer + spectral_zeropad native + spectral_zeropad transfer.
 # We discriminate SpectraNet head variants by parameter count: 2,124,166 =
 # decorated multi-resolution + KAN head (the variant tested in ablation E7);
-# 2,040,705 = canonical SpectraNet with the two-layer 1x1 MLP output head.
+# 2,040,705 = SpectraNet with the two-layer 1x1 MLP output head.
 # FNO at 4,749,377 is the spectral baseline.
 
 # (display_label, model_kind, params)
@@ -113,7 +113,7 @@ with RES_TEX.open("w") as f:
             "convolution layer is resolution-invariant by construction "
             "(Prop.~\\ref{prop:res-inv}); FNO's purely spectral output projection inherits "
             "this cleanly. The decorated SpectraNet variant (multi-resolution $+$ KAN "
-            "output head, top block) and the canonical SpectraNet (two-layer "
+            "output head, top block) and the SpectraNet (two-layer "
             "$1{\\times}1$ MLP head, middle block) both incur a "
             "$\\sim\\!2.0\\!-\\!2.2\\times$ transfer-ratio "
             "degradation: the head decoration is \\emph{not} the source of the "

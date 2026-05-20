@@ -21,7 +21,7 @@ PLOTS    = os.path.normpath(os.path.join(THIS_DIR, "..", "plots"))
 os.makedirs(PLOTS, exist_ok=True)
 
 
-# ── Hard-coded accuracy table (test L2 best-val) and category, from RESEARCH_STATE.md ──
+# ── Hard-coded accuracy table (test L2 best-val) and category, from the paper ──
 ACC = {
     # (label_key, test_l2, category)
     "FNO":                  (0.1024, "FNO-family"),

@@ -46,7 +46,7 @@ class KANConfig:
 
 
 def default_kan_flags() -> dict:
-    """All-False KAN flags — the canonical SpectraNet uses no KAN sub-layers."""
+    """All-False KAN flags — the SpectraNet uses no KAN sub-layers."""
     return {
         "fno_mlp": False,
         "residual_w": False,

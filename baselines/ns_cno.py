@@ -5,7 +5,7 @@ adapted to our 850/150/200 split, sliding-window autoregressive rollout.
 Model source: ./third_party/CNO/CNO2d_simplified/CNO2d.py
   (pure PyTorch, no StyleGAN3 / Lightning / CUDA-kernel deps)
 
-Protocol (gold-standard, identical to ns_sunet_ar2d.py / ns_oformer.py):
+Protocol (shared, identical to ns_sunet_ar2d.py / ns_oformer.py):
   - 850 train / 150 val / 200 test, T_in=10, T_out=10, step=1
   - Data: NavierStokes_V1e-5_N1200_T20.mat (.mat scipy format, 64×64)
   - Optimizer: AdamW, weight_decay=1e-5

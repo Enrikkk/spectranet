@@ -1,6 +1,6 @@
 # Running the baselines
 
-The 17 baseline neural operators in the paper come from 8 upstream repositories.  We ship our **first-party adapter scripts** that wire each baseline into the gold-standard SpectraNet protocol; we do **not** vendor third-party code.  Run `bash baselines/install_baselines.sh` to clone every upstream at the pinned commit we used.
+The 17 baseline neural operators in the paper come from 8 upstream repositories.  We ship our **adapter scripts** that wire each baseline into the shared SpectraNet protocol; we do **not** vendor third-party code.  Run `bash baselines/install_baselines.sh` to clone every upstream at the pinned commit we used.
 
 ## Adapter inventory
 

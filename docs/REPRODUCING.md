@@ -168,7 +168,7 @@ python timing/cpu/aggregate_timings_cpu.py
 
 ## Multi-seed σ (paper Table 6)
 
-The canonical SpectraNet was trained at a single seed.  Stability evidence comes from the *decorated* variant, which was trained at seeds 0 and 1 with measured σ = 0.0001.  See `results/multi_seed.csv`.  To reproduce, retrain at `--seed 1`:
+The SpectraNet was trained at a single seed.  Stability evidence comes from the *decorated* variant, which was trained at seeds 0 and 1 with measured σ = 0.0001.  See `results/multi_seed.csv`.  To reproduce, retrain at `--seed 1`:
 
 ```bash
 python scripts/train_spectranet.py \

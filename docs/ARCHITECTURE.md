@@ -12,7 +12,7 @@ SpectraNet is a U-Net-shaped autoregressive operator with three named building b
 2. **Semigroup-Consistency Loss** — a training-time penalty that enforces `f(f(u_t)) ≈ u_{t+2}` in addition to the per-step L² loss; weighted by `--two_step_lambda` (canonical 0.1).  Implemented in the trainer at `scripts/train_spectranet.py:240`.
 3. **Output projection** — a two-layer 1×1 MLP (canonical: hidden 4×width=128, GeLU between).  Defined in `spectranet/model.py:160` (`MLP2d`); selected as the head at `spectranet/model.py:434` when `output_mode='single'`.
 
-The decorated multi-resolution + KAN-on-output head is preserved as `output_mode='multiscale_mlp'` for ablation reproducibility, but is **not** part of canonical SpectraNet — see paper §8.
+The decorated multi-resolution + KAN-on-output head is preserved as `output_mode='multiscale_mlp'` for ablation reproducibility, but is **not** part of SpectraNet — see paper §8.
 
 ## Forward pass (canonical configuration)
 
@@ -55,4 +55,4 @@ Predicted frame is consumed by the next call's input window.  In residual-target
 
 ## Why the multi-resolution + KAN head was removed
 
-The decorated head added 80 K parameters (`MultiScaleOutput2d` + KAN sub-modules) for a Δ = 0.0001 accuracy difference at noise level σ = 0.0001.  Following the polish-pass discussion in `RESEARCH_STATE.md` §22, the canonical model was redefined at the simpler operating point, with the decorated variant kept as a tested-and-rejected ablation row in `results/micro_ablation.csv`.
+The decorated head added 80 K parameters (`MultiScaleOutput2d` + KAN sub-modules) for a Δ = 0.0001 accuracy difference at noise level σ = 0.0001. the canonical model was redefined at the simpler operating point, with the decorated variant kept as a ablation row in `results/micro_ablation.csv`.

@@ -13,7 +13,7 @@ Each `.pt` file is a bare PyTorch `state_dict`.  Load with the matching `SUNet2d
 | `spectranet_dr_best.pt`                | decorated | Diffusion-Reaction | 0.0201 | 2,124,166 |
 | `spectranet_am_best.pt`                | decorated | Active Matter | 0.00170 | 2,124,166 |
 | `spectranet_ns_v1e5_128_best.pt`       | decorated, S=128 | NS ν=10⁻⁵, 128² | 0.0724 | 2,124,166 |
-| `fno_canonical_best.pt`                | canonical FNO (NSL) | NS ν=10⁻⁵, 64² | 0.1024 | 4,749,377 |
+| `fno_canonical_best.pt`                | FNO (NSL) | NS ν=10⁻⁵, 64² | 0.1024 | 4,749,377 |
 | `transformer_canonical_best.pt`        | NSL Transformer (full softmax) | NS ν=10⁻⁵, 64² | 0.0284 | 4,381,441 |
 
 The "decorated" variant differs from "canonical" only in the output projection (`output_mode='multiscale_mlp'` instead of `'single'`); see `docs/ARCHITECTURE.md`.
